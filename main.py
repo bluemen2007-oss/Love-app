@@ -39,7 +39,7 @@ class LoveApp(App):
         # Title
         self.title_label = Label(
             text="IMPORTANT QUESTIONS",
-            font_size=32,
+            font_size=38,
             bold=True,
             size_hint_y=0.18,
             halign="center",
@@ -54,7 +54,7 @@ class LoveApp(App):
         # Question
         self.question_label = Label(
             text=self.questions[0],
-            font_size=28,
+            font_size=34,
             bold=True,
             size_hint_y=0.25,
             halign="center",
@@ -69,9 +69,9 @@ class LoveApp(App):
         # Answer input
         self.answer_input = TextInput(
             multiline=False,
-            font_size=24,
+            font_size=28,
             size_hint_y=None,
-            height=65,
+            height=70,
             padding=[15, 15],
             halign="center"
         )
@@ -84,10 +84,10 @@ class LoveApp(App):
         # Next button
         self.next_button = Button(
             text="NEXT",
-            font_size=25,
+            font_size=28,
             bold=True,
             size_hint_y=None,
-            height=70
+            height=75
         )
 
         self.next_button.bind(
@@ -136,7 +136,7 @@ class LoveApp(App):
             # Final title
             final_title = Label(
                 text="THE END",
-                font_size=36,
+                font_size=42,
                 bold=True,
                 size_hint_y=0.25,
                 halign="center",
@@ -148,14 +148,14 @@ class LoveApp(App):
                 setattr(instance, "text_size", value)
             )
 
-            # Your final messages
+            # Final messages
             final_message = Label(
                 text=(
                     "Mimiiiiiiiiii bedeeeeeeeeee\n\n"
                     "Toloooooooooo khodaaaaaaaaaaa\n\n"
                     "I LOVE YOU"
                 ),
-                font_size=30,
+                font_size=38,
                 bold=True,
                 halign="center",
                 valign="middle",
